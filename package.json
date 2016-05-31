@@ -1,0 +1,27 @@
+{
+  "name": "ttyh-pc-loading",
+  "version": "1.0.0",
+  "description": "ttyh pc loading",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmccer/ttyh-pc-loading.git"
+  },
+  "keywords": [
+    "loading"
+  ],
+  "author": "Kane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmccer/ttyh-pc-loading/issues"
+  },
+  "homepage": "https://github.com/dmccer/ttyh-pc-loading#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.1.0",
+    "ttyh-less-lib": "^1.0.1"
+  }
+}
