@@ -1,6 +1,6 @@
 {
   "name": "ttyh-pc-loading",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ttyh pc loading",
   "main": "dist/index.js",
   "dest": "dist",
@@ -25,7 +25,8 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "react": "^15.1.0",
-    "ttyh-less-lib": "^1.0.1"
+    "ttyh-less-lib": "^1.0.1",
+    "ttyh-timers": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",

@@ -3,7 +3,9 @@ import './index.less';
 
 import React from 'react';
 import cx from 'classnames';
+import TTimers from 'ttyh-timers';
 
+@TTimers
 export default class Loading extends React.Component {
   constructor() {
     super();
@@ -14,10 +16,6 @@ export default class Loading extends React.Component {
     };
   }
 
-  componentWillUnmount() {
-    this.timeout && this.timeout.clearTimeout();
-  }
-
   toggle(msg: string, timeout=3000: number) {
     this.setState({
       msg: msg,
@@ -25,11 +23,11 @@ export default class Loading extends React.Component {
       on: true
     });
 
-    this.timeout = setTimeout(() => {
+    this.props.setTimeout(() => {
       this.setState({
         on: false
       });
-    }, this.state.timeout)
+    }, this.state.timeout);
   }
 
   show(msg: string) {
