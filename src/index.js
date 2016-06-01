@@ -14,6 +14,10 @@ export default class Loading extends React.Component {
     };
   }
 
+  componentWillUnmount() {
+    this.timeout && this.timeout.clearTimeout();
+  }
+
   toggle(msg: string, timeout=3000: number) {
     this.setState({
       msg: msg,
@@ -21,7 +25,7 @@ export default class Loading extends React.Component {
       on: true
     });
 
-    setTimeout(() => {
+    this.timeout = setTimeout(() => {
       this.setState({
         on: false
       });
