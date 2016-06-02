@@ -1,6 +1,6 @@
 {
   "name": "ttyh-pc-loading",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "ttyh pc loading",
   "main": "dist/index.js",
   "dest": "dist",
